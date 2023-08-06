@@ -2,31 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-       <h1>Booking app</h1>
-        <form action="addBook">
-            <div>
-              <label for="fname">Username</label>
-              <input type="text" id="fname" name="fname" placeholder="User">
-            </div>
-            <br>
-            <div>
-              <label for="pnum">PhoneNumber</label>
-              <input type="number" id="pnum" name="pnum" placeholder="Number">
-            </div>
-            <br>
-            <div>
-              <label for="email">Email</label>
-              <input type="text" id="email" name="email" placeholder="Emailid">
-            </div>
-               <br>
-             <div>
-                <input type="submit">
-             </div>
+    <div class="container">
+       <form action="/addmoney"  >
+   <h3>Expenss</h3>
 
-        </form>
+    <hr>
+      <div>
+    <label for="name"><b>Full name</b></label>
+    <input type="text" placeholder="Enter Name" name="name" id="name" required>
+      </div>
+      <br>
+      <div>
+    <label for="phn"><b>Phone no</b></label>
+    <input type="phone" placeholder="Enter Phone Number" name="phone" id="phone" required>
+     </div>
+     <br>
+     <div>
+    <label for="amnt"><b>Amount</b></label>
+    <input type="balanes" placeholder="balanes" name="balanes" id="balanes" required>
+       </div>
+       <br>
+     <label for="amntno"><b>AcountNo</b></label>
+    <input type="acountno" placeholder="acountno" name="acountno" id="acountno" required>
+        <br>
+  <div class="gender_g">
+     <strong>Gender</strong>
+     <input type="radio" name="gender" id="" value="Male"> Male
+     <input type="radio" name="gender" id=""  value="Female">  Female
+  </div>
+    <button type="submit" class="registerbtn">ADD Money</button>
+
+
+    <a href="./" style="color:black">BACK TO HOME PAGE</a> <br>
+
+     {{#if mesg}}
+     <h3>Data Inserted</h3>
+     {{/if}}
+
+      {{#if checkmesg}}
+     <h3>Balence Is Present....</h3>
+     {{/if}}
+</form>
+</div>
 </body>
 </html>
